@@ -1,0 +1,27 @@
+<h1>User Registration/Login</h1>
+<div class="button">
+<button class="btn btn-primary" routerLink="/signup">Register</button>
+<button class="btn btn-primary" routerLink="/login">Login</button>
+</div>
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr >
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Password</th>
+              <th scope="col">delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of usersList">
+              <td>{{user.id}}</td>
+              <td>{{user.name}}</td>
+              <td>{{user.email}}</td>
+              <td>{{user.password}}</td>
+              <td><button class="btn btn-danger" (click)="delete(user.id)">delete</button></td>
+            </tr>
+          </tbody>
+      </table>
+</div>

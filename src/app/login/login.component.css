@@ -1,0 +1,26 @@
+
+.container{
+    width: 50%;
+}
+
+.has-danger{
+    border: 2px solid red;
+}
+.has-success{
+    border: 2px solid rgb(5, 160, 31);
+
+}  
+.errmsg{
+    color: red;
+}
+button{
+    margin: 20px 20px 20px 0;
+}
+input, select{
+    background-color: rgb(252, 252, 211);
+}
+input, select, label{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
